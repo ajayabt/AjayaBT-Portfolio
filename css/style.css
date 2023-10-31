@@ -37,6 +37,7 @@ h1{
   width:100%
 }
 
+
 .logo{
     display: flex;
     justify-content: end;
@@ -44,7 +45,7 @@ h1{
 }
 
 #about-me{
-    display: flex;
+    display:flexbox;
     justify-content: center;
     align-items: center;
     background-color: grey;
@@ -93,47 +94,136 @@ background-color: var(--navbgc) ;
     "box1 box1"
     "box2 box3"
     "box2 box4";
-
-    
-
-}
-
-.boximage1{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;    
-
+    align-items: flex-start;
+    height: 2000px;
+    width: auto;
 }
 
 .box1{
-grid-area: box1;
-width: 100%;
-height: 800px;
 display: flex;
+grid-area: box1;
+width: auto;
+height: 1400px;
+justify-content: center;
+align-items: center;
 }
 
 .box2{
 grid-area: box2;
 display: flex;
-justify-content: center;
-height: auto;
-height:800px
+height:600px;
+align-items: center;
+
     }
 
 .box3{
 grid-area: box3;
 display: flex;
-justify-content: center;
-height: 400px;
+height: 300px;
+align-items: center;
 }
 
 .box4{
 grid-area: box4;
 display: flex;
+align-items: center;
 justify-content: center;
-
-height: 400px;
+height: 300px;
     }
 
+
+
+.forestplaceholder{
+left:200px;
+bottom:200px;
+display: inline-block;
+
+}
+
+.boximage1{
+        height: 600px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+    
+    }
+
+.boximage2{
+        width: auto;
+        height: 600px;
+        display: flex;
+        justify-content: center; 
+        padding: 200px;
+
+    }
+
+.boximage3{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center; 
+        padding-left: 75px;
+    
+    
+
+    }
+
+.boximage4{
+        width: 50%;
+        height: 270px; 
+        justify-content: center;
+        padding-left:150px;
+    }
+.contactlist{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+
+
+.CV{
+   display: flex;
+   justify-content: center;
+   font-size: 25px;
+   padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;}
+    nav{ 
+        display: flex;
+        flex-direction: column;}
+    .maintext{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .boxgrid {
+       display: flex;
+       flex-direction: column;
+       height: auto;
+        
+    }
+    .boximage1, .boximage2, .boximage3, .boximage4{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 0;
+    }
+
+    .box1, .box2, .box3, .box4{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    }
+
+   
 
